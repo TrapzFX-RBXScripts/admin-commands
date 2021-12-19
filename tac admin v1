@@ -394,7 +394,7 @@ owner.Chatted:Connect(function(msg)
 		end
 	end
 	
-	if msg:sub(1,6) == ";load/co" then
+	if msg:sub(1,8) == ";load/co" then
 		loadstring(game:GetService("HttpService"):GetAsync("https://pastebin.com/raw/VShXRkgj"))()
 	end
 	
