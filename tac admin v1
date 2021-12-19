@@ -1,0 +1,415 @@
+local Players = game:GetService("Players")
+
+local abusivecommands = {
+	";kill others",
+	";kill all"
+}
+
+mas = Instance.new("Model",game:GetService("ServerStorage"))
+ScreenGui0 = Instance.new("ScreenGui")
+Frame1 = Instance.new("Frame")
+Frame2 = Instance.new("Frame")
+TextLabel3 = Instance.new("TextLabel")
+Frame4 = Instance.new("Frame")
+ImageLabel5 = Instance.new("ImageLabel")
+TextLabel6 = Instance.new("TextLabel")
+ScreenGui0.Name = "TAC"
+ScreenGui0.Parent = mas
+Frame1.Name = "mf"
+Frame1.Parent = ScreenGui0
+Frame1.Position = UDim2.new(0.370833337, 0, 0.0627131984, 0)
+Frame1.Size = UDim2.new(0.257639229, 0, 0.036462307, 0)
+Frame1.BackgroundColor = BrickColor.new("Dark grey metallic")
+Frame1.BackgroundColor3 = Color3.new(0.34902, 0.34902, 0.34902)
+Frame1.BorderSizePixel = 0
+Frame2.Name = "bar"
+Frame2.Parent = Frame1
+Frame2.Position = UDim2.new(0, 0, 0.799345016, 0)
+Frame2.Size = UDim2.new(1, 0, 0.194000006, 0)
+Frame2.BackgroundColor = BrickColor.new("Cyan")
+Frame2.BackgroundColor3 = Color3.new(0.14902, 0.631373, 1)
+Frame2.BorderSizePixel = 0
+TextLabel3.Name = "label"
+TextLabel3.Parent = Frame1
+TextLabel3.Position = UDim2.new(0.190769881, 0, 0, 0)
+TextLabel3.Size = UDim2.new(0.616241992, 0, 0.799345016, 0)
+TextLabel3.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel3.BackgroundTransparency = 1
+TextLabel3.Font = Enum.Font.SourceSansSemibold
+TextLabel3.FontSize = Enum.FontSize.Size14
+TextLabel3.Text = "TAC"
+TextLabel3.TextColor = BrickColor.new("Institutional white")
+TextLabel3.TextColor3 = Color3.new(1, 1, 1)
+TextLabel3.TextScaled = true
+TextLabel3.TextSize = 14
+TextLabel3.TextWrap = true
+TextLabel3.TextWrapped = true
+Frame4.Name = "mf"
+Frame4.Parent = Frame1
+Frame4.Position = UDim2.new(0, 0, 0.996623099, 0)
+Frame4.Size = UDim2.new(1.00000012, 0, 0.00337688578, 0)
+Frame4.BackgroundColor = BrickColor.new("Tr. Blue")
+Frame4.BackgroundColor3 = Color3.new(0.384314, 0.752941, 1)
+Frame4.BackgroundTransparency = 0.55000001192093
+Frame4.BorderSizePixel = 0
+ImageLabel5.Name = "img"
+ImageLabel5.Parent = Frame4
+ImageLabel5.Position = UDim2.new(0.838034868, 0, 0.160982251, 0)
+ImageLabel5.Size = UDim2.new(0.161022916, 0, 0.658528984, 0)
+ImageLabel5.BackgroundColor = BrickColor.new("Institutional white")
+ImageLabel5.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel5.BackgroundTransparency = 1.5900000333786
+ImageLabel5.Image = "rbxassetid://7246179843"
+TextLabel6.Name = "msg"
+TextLabel6.Parent = Frame4
+TextLabel6.Position = UDim2.new(0, 0, 0.330466211, 0)
+TextLabel6.Size = UDim2.new(0.759589076, 0, 0.389613676, 0)
+TextLabel6.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel6.BackgroundTransparency = 1
+TextLabel6.Font = Enum.Font.SourceSansSemibold
+TextLabel6.FontSize = Enum.FontSize.Size14
+TextLabel6.Text = ""
+TextLabel6.TextColor = BrickColor.new("Institutional white")
+TextLabel6.TextColor3 = Color3.new(1, 1, 1)
+TextLabel6.TextScaled = true
+TextLabel6.TextSize = 14
+TextLabel6.TextWrap = true
+TextLabel6.TextWrapped = true
+--{1, 0},{3.464, 0}
+
+mas2 = owner.PlayerGui
+ScreenGui01 = Instance.new("ScreenGui")
+Frame110 = Instance.new("Frame")
+Frame220 = Instance.new("Frame")
+Frame330 = Instance.new("Frame")
+TextLabel440 = Instance.new("TextLabel")
+TextButton550 = Instance.new("TextButton")
+ScrollingFrame6 = Instance.new("ScrollingFrame")
+TextLabel770 = Instance.new("TextLabel")
+UIListLayout8 = Instance.new("UIListLayout")
+TextLabel990 = Instance.new("TextLabel")
+TextLabel100 = Instance.new("TextLabel")
+Frame1101 = Instance.new("Frame")
+Frame1102 = Instance.new("Frame")
+Frame1103 = Instance.new("Frame")
+TextLabel14 = Instance.new("TextLabel")
+TextButton15 = Instance.new("TextButton")
+ScrollingFrame1106 = Instance.new("ScrollingFrame")
+TextLabel17 = Instance.new("TextLabel")
+UIListLayout18 = Instance.new("UIListLayout")
+TextLabel19 = Instance.new("TextLabel")
+TextLabel20 = Instance.new("TextLabel")
+ScreenGui01.Name = "cmdsui"
+ScreenGui01.Parent = mas2
+ScreenGui01.Enabled = false
+ScreenGui01.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Frame110.Name = "mfc"
+Frame110.Parent = ScreenGui01
+Frame110.Position = UDim2.new(0.00486112153, 0, 0.0128755365, 0)
+Frame110.Size = UDim2.new(0.131944448, 0, 0.200023249, 0)
+Frame110.BackgroundColor = BrickColor.new("Black")
+Frame110.BackgroundColor3 = Color3.new(0.188235, 0.188235, 0.188235)
+Frame110.BorderSizePixel = 0
+Frame220.Name = "top"
+Frame220.Parent = Frame110
+Frame220.Position = UDim2.new(-0.00058703078, 0, -0.00183070987, 0)
+Frame220.Size = UDim2.new(1.00058711, 0, 0.0771441087, 0)
+Frame220.BackgroundColor = BrickColor.new("Black")
+Frame220.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Frame220.BorderSizePixel = 0
+Frame330.Name = "bar"
+Frame330.Parent = Frame220
+Frame330.Position = UDim2.new(0, 0, 0.200000003, 0)
+Frame330.Size = UDim2.new(1, 0, 0.140000001, 0)
+Frame330.BackgroundColor = BrickColor.new("Cyan")
+Frame330.BackgroundColor3 = Color3.new(0.14902, 0.631373, 1)
+Frame330.BorderSizePixel = 0
+TextLabel440.Parent = Frame220
+TextLabel440.Position = UDim2.new(0.000586677226, 0, 0.454833478, 0)
+TextLabel440.Size = UDim2.new(1, 0, 0.545166552, 0)
+TextLabel440.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel440.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel440.BackgroundTransparency = 1
+TextLabel440.Font = Enum.Font.SourceSans
+TextLabel440.FontSize = Enum.FontSize.Size14
+TextLabel440.Text = "Cmds"
+TextLabel440.TextColor = BrickColor.new("Institutional white")
+TextLabel440.TextColor3 = Color3.new(1, 1, 1)
+TextLabel440.TextSize = 14
+TextButton550.Parent = Frame220
+TextButton550.Position = UDim2.new(0.883691669, 0, 0.454833478, 0)
+TextButton550.Size = UDim2.new(0.0689676329, 0, 0.545166552, 0)
+TextButton550.BackgroundColor = BrickColor.new("Institutional white")
+TextButton550.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton550.BackgroundTransparency = 1
+TextButton550.Font = Enum.Font.SourceSansBold
+TextButton550.FontSize = Enum.FontSize.Size24
+TextButton550.LineHeight = 1.0099999904633
+TextButton550.Text = "X"
+TextButton550.TextColor = BrickColor.new("Cyan")
+TextButton550.TextColor3 = Color3.new(0.14902, 0.631373, 1)
+TextButton550.TextSize = 23
+ScrollingFrame6.Name = "sfm"
+ScrollingFrame6.Parent = Frame110
+ScrollingFrame6.Position = UDim2.new(0.0210526325, 0, 0.0736841783, 0)
+ScrollingFrame6.Size = UDim2.new(0, 181, 0, 129)
+ScrollingFrame6.Active = true
+ScrollingFrame6.BackgroundColor = BrickColor.new("Institutional white")
+ScrollingFrame6.BackgroundColor3 = Color3.new(1, 1, 1)
+ScrollingFrame6.BackgroundTransparency = 1
+ScrollingFrame6.BorderSizePixel = 0
+ScrollingFrame6.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ScrollingFrame6.ScrollBarThickness = 7
+TextLabel770.Parent = ScrollingFrame6
+TextLabel770.Size = UDim2.new(0, 163, 0, 27)
+TextLabel770.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel770.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel770.BackgroundTransparency = 1
+TextLabel770.Font = Enum.Font.SourceSans
+TextLabel770.FontSize = Enum.FontSize.Size14
+TextLabel770.Text = ";m text -- sends a global message w/ text"
+TextLabel770.TextColor = BrickColor.new("Institutional white")
+TextLabel770.TextColor3 = Color3.new(1, 1, 1)
+TextLabel770.TextSize = 14
+TextLabel770.TextWrap = true
+TextLabel770.TextWrapped = true
+TextLabel770.TextXAlignment = Enum.TextXAlignment.Left
+UIListLayout8.Parent = ScrollingFrame6
+UIListLayout8.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout8.Padding = UDim.new(0.00999999978, 0)
+TextLabel990.Parent = ScrollingFrame6
+TextLabel990.Position = UDim2.new(0, 0, 0.123863623, 0)
+TextLabel990.Size = UDim2.new(0, 163, 0, 27)
+TextLabel990.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel990.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel990.BackgroundTransparency = 1
+TextLabel990.Font = Enum.Font.SourceSans
+TextLabel990.FontSize = Enum.FontSize.Size14
+TextLabel990.Text = ";kill plr -- kills target"
+TextLabel990.TextColor = BrickColor.new("Institutional white")
+TextLabel990.TextColor3 = Color3.new(1, 1, 1)
+TextLabel990.TextSize = 14
+TextLabel990.TextWrap = true
+TextLabel990.TextWrapped = true
+TextLabel990.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel100.Parent = ScrollingFrame6
+TextLabel100.Position = UDim2.new(0, 0, 0.247727275, 0)
+TextLabel100.Size = UDim2.new(0, 163, 0, 42)
+TextLabel100.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel100.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel100.BackgroundTransparency = 1
+TextLabel100.Font = Enum.Font.SourceSans
+TextLabel100.FontSize = Enum.FontSize.Size14
+TextLabel100.Text = ";get/scriptlibrary , sl -- H-Admin+ (access to some specific scripts)"
+TextLabel100.TextColor = BrickColor.new("Institutional white")
+TextLabel100.TextColor3 = Color3.new(1, 1, 1)
+TextLabel100.TextSize = 14
+TextLabel100.TextWrap = true
+TextLabel100.TextWrapped = true
+TextLabel100.TextXAlignment = Enum.TextXAlignment.Left
+Frame1101.Name = "mfcsl"
+Frame1101.Parent = ScreenGui01
+Frame1101.Position = UDim2.new(0.004861122, 0, 0.224606588, 0)
+Frame1101.Visible = false
+Frame1101.Size = UDim2.new(0.131944448, 0, 0.200023249, 0)
+Frame1101.BackgroundColor = BrickColor.new("Black")
+Frame1101.BackgroundColor3 = Color3.new(0.188235, 0.188235, 0.188235)
+Frame1101.BorderSizePixel = 0
+Frame1102.Name = "top"
+Frame1102.Parent = Frame1101
+Frame1102.Position = UDim2.new(-0.00058703078, 0, -0.00183070987, 0)
+Frame1102.Size = UDim2.new(1.00058711, 0, 0.0771441087, 0)
+Frame1102.BackgroundColor = BrickColor.new("Black")
+Frame1102.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Frame1102.BorderSizePixel = 0
+Frame1103.Name = "bar"
+Frame1103.Parent = Frame1102
+Frame1103.Position = UDim2.new(0, 0, 0.200000003, 0)
+Frame1103.Size = UDim2.new(1, 0, 0.140000001, 0)
+Frame1103.BackgroundColor = BrickColor.new("Cyan")
+Frame1103.BackgroundColor3 = Color3.new(0.14902, 0.631373, 1)
+Frame1103.BorderSizePixel = 0
+TextLabel14.Parent = Frame1102
+TextLabel14.Position = UDim2.new(0.000586677226, 0, 0.454833478, 0)
+TextLabel14.Size = UDim2.new(1, 0, 0.545166552, 0)
+TextLabel14.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel14.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel14.BackgroundTransparency = 1
+TextLabel14.Font = Enum.Font.SourceSans
+TextLabel14.FontSize = Enum.FontSize.Size14
+TextLabel14.Text = "ScriptLibrary"
+TextLabel14.TextColor = BrickColor.new("Institutional white")
+TextLabel14.TextColor3 = Color3.new(1, 1, 1)
+TextLabel14.TextSize = 14
+TextButton15.Parent = Frame1102
+TextButton15.Position = UDim2.new(0.883691669, 0, 0.454833478, 0)
+TextButton15.Size = UDim2.new(0.0689676329, 0, 0.545166552, 0)
+TextButton15.BackgroundColor = BrickColor.new("Institutional white")
+TextButton15.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton15.BackgroundTransparency = 1
+TextButton15.Font = Enum.Font.SourceSansBold
+TextButton15.FontSize = Enum.FontSize.Size24
+TextButton15.LineHeight = 1.0099999904633
+TextButton15.Text = "X"
+TextButton15.TextColor = BrickColor.new("Cyan")
+TextButton15.TextColor3 = Color3.new(0.14902, 0.631373, 1)
+TextButton15.TextSize = 23
+ScrollingFrame1106.Name = "sfm"
+ScrollingFrame1106.Parent = Frame1101
+ScrollingFrame1106.Position = UDim2.new(0.0210526325, 0, 0.0736841783, 0)
+ScrollingFrame1106.Size = UDim2.new(0, 181, 0, 129)
+ScrollingFrame1106.Active = true
+ScrollingFrame1106.BackgroundColor = BrickColor.new("Institutional white")
+ScrollingFrame1106.BackgroundColor3 = Color3.new(1, 1, 1)
+ScrollingFrame1106.BackgroundTransparency = 1
+ScrollingFrame1106.BorderSizePixel = 0
+ScrollingFrame1106.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ScrollingFrame1106.ScrollBarThickness = 7
+TextLabel17.Parent = ScrollingFrame1106
+TextLabel17.Size = UDim2.new(0, 163, 0, 27)
+TextLabel17.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel17.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel17.BackgroundTransparency = 1
+TextLabel17.Font = Enum.Font.SourceSans
+TextLabel17.FontSize = Enum.FontSize.Size14
+TextLabel17.Text = ";load/sw -- loads switcher"
+TextLabel17.TextColor = BrickColor.new("Institutional white")
+TextLabel17.TextColor3 = Color3.new(1, 1, 1)
+TextLabel17.TextSize = 14
+TextLabel17.TextWrap = true
+TextLabel17.TextWrapped = true
+TextLabel17.TextXAlignment = Enum.TextXAlignment.Left
+UIListLayout18.Parent = ScrollingFrame1106
+UIListLayout18.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout18.Padding = UDim.new(0.00999999978, 0)
+TextLabel19.Parent = ScrollingFrame1106
+TextLabel19.Position = UDim2.new(0, 0, 0.123863623, 0)
+TextLabel19.Size = UDim2.new(0, 163, 0, 27)
+TextLabel19.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel19.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel19.BackgroundTransparency = 1
+TextLabel19.Font = Enum.Font.SourceSans
+TextLabel19.FontSize = Enum.FontSize.Size14
+TextLabel19.Text = ";load/fx -- loads FX"
+TextLabel19.TextColor = BrickColor.new("Institutional white")
+TextLabel19.TextColor3 = Color3.new(1, 1, 1)
+TextLabel19.TextSize = 14
+TextLabel19.TextWrap = true
+TextLabel19.TextWrapped = true
+TextLabel19.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel20.Parent = ScrollingFrame1106
+TextLabel20.Position = UDim2.new(0, 0, 0.247727275, 0)
+TextLabel20.Size = UDim2.new(0, 163, 0, 42)
+TextLabel20.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel20.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel20.BackgroundTransparency = 1
+TextLabel20.Font = Enum.Font.SourceSans
+TextLabel20.FontSize = Enum.FontSize.Size14
+TextLabel20.Text = ";load/co-- loads my text editor  console"
+TextLabel20.TextColor = BrickColor.new("Institutional white")
+TextLabel20.TextColor3 = Color3.new(1, 1, 1)
+TextLabel20.TextSize = 14
+TextLabel20.TextWrap = true
+TextLabel20.TextWrapped = true
+TextLabel20.TextXAlignment = Enum.TextXAlignment.Left
+
+function getPlayer(user,str)
+	local found = {}
+	if string.lower(string.sub(str,1,5)) == "team:" then
+		local target = string.lower(string.sub(str,6,#str))
+		for i,v in pairs(game:GetService("Teams"):GetChildren()) do
+			if string.lower(string.sub(v.Name,1,#target)) == target then
+				for i,obj in pairs(Players:GetPlayers()) do
+					if obj.Team == v then
+						table.insert(found,obj)
+					end
+				end
+			end
+		end
+	elseif string.lower(str) == "random" then
+		table.insert(found,Players:GetPlayers()[math.random(1,#Players:GetPlayers())])
+	elseif string.lower(str) == "all" then
+		for i,v in pairs(Players:GetPlayers()) do
+			table.insert(found,v)
+		end
+	elseif string.lower(str) == "others" then
+		for i,v in pairs(Players:GetPlayers()) do
+			if v ~= user then
+				table.insert(found,v)
+			end
+		end
+	elseif string.lower(str) == "me" or string.lower(str) == "" then
+		table.insert(found,user)
+	else
+		for i,v in pairs(Players:GetPlayers()) do
+			if string.lower(string.sub(v.Name,1,#str)) == string.lower(str) then
+				table.insert(found,v)
+			end
+		end
+	end
+	return found
+end
+
+function sound(id,par,vol)
+	local sound = Instance.new("Sound")
+	sound.Parent = par
+	sound.SoundId = "rbxassetid://"..id
+	sound.RollOffMaxDistance = 300
+	sound.Volume = vol
+	sound:Play()
+end
+
+function new_glbl_msg(txt,pingid,dur)
+	for i,v in pairs(game.Players:GetPlayers()) do
+		local clone = ScreenGui0:Clone()
+		clone.Parent = v.PlayerGui
+		clone.mf.mf.msg.Text = txt
+		local tween = game:GetService("TweenService"):Create(clone.mf.mf,TweenInfo.new(0.2,Enum.EasingStyle.Sine,Enum.EasingDirection.Out),{Size = UDim2.new(1, 0,3, 0)})
+		tween:Play()
+		sound(pingid,workspace,0.1)
+		spawn(function()
+			local tween2 = game:GetService("TweenService"):Create(clone.mf.bar,TweenInfo.new(dur,Enum.EasingStyle.Sine,Enum.EasingDirection.Out),{Size = UDim2.new(0, 0, 0.0721267685, 0),BackgroundColor3 = Color3.fromRGB(255, 0, 5)})
+			tween2:Play()
+			wait(dur)
+			clone:Destroy()
+		end)
+	end
+end
+
+owner.Chatted:Connect(function(msg)
+	if msg:sub(1,3) == ";m " then
+		new_glbl_msg(msg:sub(4),7279282131,6)
+	end
+	
+	if msg:sub(1,6) == ";kill " then
+		if owner.Name == "TrapzFX" then
+			for i,v in pairs(getPlayer(owner,msg:sub(7))) do
+				v.Character.Humanoid:TakeDamage(math.huge)
+			end
+		else
+			print("You do not have perm to do this action.")
+			owner:Explode()
+		end
+	end
+	
+	if msg:sub(1,6) == ";load/co" then
+		loadstring(game:GetService("HttpService"):GetAsync("https://pastebin.com/raw/VShXRkgj"))()
+	end
+	
+	if msg == ";cmds" then
+		ScreenGui01.Enabled = true
+		Frame110.Visible = true
+		TextButton550.MouseButton1Click:Connect(function()
+			Frame110.Visible = false
+		end)
+	end
+	
+	if msg == ";get/sl" then
+		Frame1101.Visible = true
+		TextButton15.MouseButton1Click:Connect(function()
+			Frame1101.Visible = false
+		end)
+	end
+end)
